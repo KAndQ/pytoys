@@ -1,6 +1,10 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
+# MD5 校验工具
+# 输入一个文件名是获得该文件的 MD5 值;
+# 输入两个文件名是比对两个文件的 MD5 值是否相同;
+
 import sys, os
 from os import path
 import hashlib

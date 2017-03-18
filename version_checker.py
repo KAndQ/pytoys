@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+# -*- coding: utf-8 -*-
+
+# 力港公司客户端使用的版本检测工具, 比对两个版本之间的不同内容, 以及大小
 
 import json
 import sys
