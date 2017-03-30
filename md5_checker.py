@@ -32,7 +32,7 @@ def getFileMD5(file):
 def compareFile(file1, file2):
     file1Md5 = getFileMD5(file1)
     file2Md5 = getFileMD5(file2)
-    return file1 == file2, file1Md5, file2Md5
+    return file1Md5 == file2Md5, file1Md5, file2Md5
 
 if __name__ == "__main__":
     if len(sys.argv) == 3:
