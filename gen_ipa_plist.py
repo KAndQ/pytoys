@@ -210,6 +210,57 @@ str_plist_glzp = ur"""
 
 """
 
+str_plist_glmj = ur"""
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>items</key>
+    <array>
+        <dict>
+            <key>assets</key>
+            <array>
+                <dict>
+                    <key>kind</key>
+                    <string>software-package</string>
+                    <key>url</key>
+                    <string>http://glmjgame.gllkgame.com/download/spreader/glmj_${SPREADER}.ipa</string>
+                </dict>
+                <dict>
+                    <key>kind</key>
+                    <string>full-size-image</string>
+                    <key>needs-shine</key>
+                    <false/>
+                    <key>url</key>
+                    <string>http://glmjgame.gllkgame.com/download/Icon-512.png</string>
+                </dict>
+                <dict>
+                    <key>kind</key>
+                    <string>display-image</string>
+                    <key>needs-shine</key>
+                    <false/>
+                    <key>url</key>
+                    <string>http://glmjgame.gllkgame.com/download/Icon-57.png</string>
+                </dict>
+            </array>
+            <key>metadata</key>
+            <dict>
+                <key>bundle-identifier</key>
+                <string>com.lkgame.glmj</string>
+                <key>bundle-version</key>
+                <string>1</string>
+                <key>kind</key>
+                <string>software</string>
+                <key>title</key>
+                <string>桂柳麻将</string>
+            </dict>
+        </dict>
+    </array>
+</dict>
+</plist>
+
+"""
+
 if GAME == "phz":
     str_plist = str_plist_phz
 elif GAME == "czzp":
@@ -217,7 +268,9 @@ elif GAME == "czzp":
 elif GAME == "hgw":
     str_plist = str_plist_hgw
 elif GAME == "glzp":
-    str_plist = str_plist_glzp 
+    str_plist = str_plist_glzp
+elif GAME == "glmj":
+    str_plist = str_plist_glmj
 
 str_plist = str_plist.replace("${SPREADER}", SPREADER)
 
